@@ -1,3 +1,34 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+	* {
+		@apply text-neutral-800;
+	}
+	*,
+	:hover {
+		@apply transition duration-200;
+	}
+
+	h1 {
+		@apply text-5xl font-bold;
+	}
+	h2 {
+		@apply text-4xl font-bold;
+	}
+
+	.bg-cyan-sky-01 {
+		@apply bg-gradient-to-br from-cyan-100 to-sky-100;
+	}
+	.bg-cyan-sky-12 {
+		@apply bg-gradient-to-br from-cyan-100 to-sky-200;
+	}
+	.bg-cyan-sky-23 {
+		@apply bg-gradient-to-br from-cyan-200 to-sky-300;
+	}
+}
+
+*::-webkit-scrollbar {
+	display: none;
+}
