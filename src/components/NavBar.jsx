@@ -1,43 +1,41 @@
+import { useEffect } from "react";
+import { Link, useParams } from "react-router-dom";
+
 export default function NavBar() {
+	const path = location.pathname;
+	const active = "bg-cyan-sky-12 py-2 px-4 rounded-full";
+	const nonActive = "hover:bg-cyan-sky-12 py-2 px-4 rounded-full";
+
+	useEffect(() => {}, [useParams()]);
+
 	return (
 		<nav className="w-fit fixed top-4 right-4">
 			<ul className="flex gap-4 bg-white w-fit p-4 rounded-full">
 				<li>
-					<a href="/" className="hover:bg-cyan-sky-12 py-2 px-4 rounded-full">
+					<Link to={"/"} className={path == "/" ? active : nonActive}>
 						Home
-					</a>
+					</Link>
 				</li>
 				<li>
-					<a
-						href="#about"
-						className="hover:bg-cyan-sky-12 py-2 px-4 rounded-full"
-					>
+					<Link to={"/about"} className={path == "/about" ? active : nonActive}>
 						About
-					</a>
+					</Link>
 				</li>
 				<li>
-					<a
-						href="#skill"
-						className="hover:bg-cyan-sky-12 py-2 px-4 rounded-full"
-					>
-						Skill
-					</a>
-				</li>
-				<li>
-					<a
-						href="#project"
-						className="hover:bg-cyan-sky-12 py-2 px-4 rounded-full"
+					<Link
+						to={"/project"}
+						className={path == "/project" ? active : nonActive}
 					>
 						Project
-					</a>
+					</Link>
 				</li>
 				<li>
-					<a
-						href="#contact"
-						className="hover:bg-cyan-sky-12 py-2 px-4 rounded-full"
+					<Link
+						to={"/contact"}
+						className={path == "/contact" ? active : nonActive}
 					>
 						Contact
-					</a>
+					</Link>
 				</li>
 			</ul>
 		</nav>

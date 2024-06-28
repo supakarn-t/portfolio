@@ -12,10 +12,13 @@
 	}
 
 	h1 {
-		@apply text-5xl font-bold;
+		@apply text-6xl font-bold;
 	}
 	h2 {
 		@apply text-4xl font-bold;
+	}
+	body {
+		@apply text-lg;
 	}
 
 	.bg-cyan-sky-01 {
@@ -26,6 +29,11 @@
 	}
 	.bg-cyan-sky-23 {
 		@apply bg-gradient-to-br from-cyan-200 to-sky-300;
+	}
+
+	.input,
+	.btn {
+		@apply px-4 py-2 rounded-lg;
 	}
 }
 
