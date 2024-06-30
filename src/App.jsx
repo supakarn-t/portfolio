@@ -4,6 +4,7 @@ import HomePage from "./pages/HomePage";
 import AboutPage from "./pages/AboutPage";
 import ProjectPage from "./pages/ProjectPage";
 import ContactPage from "./pages/ContactPage";
+import Footer from "./components/Footer";
 
 export default function App() {
 	const router = createBrowserRouter([
@@ -12,7 +13,7 @@ export default function App() {
 			element: (
 				<>
 					<NavBar />
-					<main className="flex flex-col gap-16 p-20 min-h-screen">
+					<main className="flex flex-col gap-16 p-24 min-h-screen">
 						<Outlet />
 					</main>
 				</>
@@ -25,15 +26,30 @@ export default function App() {
 				},
 				{
 					path: "/about",
-					element: <AboutPage />,
+					element: (
+						<>
+							<AboutPage />
+							<Footer />
+						</>
+					),
 				},
 				{
 					path: "/project",
-					element: <ProjectPage />,
+					element: (
+						<>
+							<ProjectPage />
+							<Footer />
+						</>
+					),
 				},
 				{
 					path: "/contact",
-					element: <ContactPage />,
+					element: (
+						<>
+							<ContactPage />
+							<Footer />
+						</>
+					),
 				},
 			],
 		},
