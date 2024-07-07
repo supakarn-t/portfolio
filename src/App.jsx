@@ -1,9 +1,7 @@
 import { createBrowserRouter, Outlet, RouterProvider } from "react-router-dom";
 import NavBar from "./components/NavBar";
 import HomePage from "./pages/HomePage";
-import AboutPage from "./pages/AboutPage";
 import ProjectPage from "./pages/ProjectPage";
-import ContactPage from "./pages/ContactPage";
 import Footer from "./components/Footer";
 
 export default function App() {
@@ -13,8 +11,9 @@ export default function App() {
 			element: (
 				<>
 					<NavBar />
-					<main className="flex flex-col gap-16 p-24 min-h-screen">
+					<main className="flex flex-col gap-16 py-24 px-4 xl:px-24 min-h-screen">
 						<Outlet />
+						<Footer />
 					</main>
 				</>
 			),
@@ -25,31 +24,8 @@ export default function App() {
 					element: <HomePage />,
 				},
 				{
-					path: "/about",
-					element: (
-						<>
-							<AboutPage />
-							<Footer />
-						</>
-					),
-				},
-				{
 					path: "/project",
-					element: (
-						<>
-							<ProjectPage />
-							<Footer />
-						</>
-					),
-				},
-				{
-					path: "/contact",
-					element: (
-						<>
-							<ContactPage />
-							<Footer />
-						</>
-					),
+					element: <ProjectPage />,
 				},
 			],
 		},
