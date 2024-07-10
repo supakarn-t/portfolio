@@ -4,17 +4,18 @@ import { Link, useParams } from "react-router-dom";
 export default function NavBar() {
 	const { pathname } = location;
 	const { hash } = location;
+	const param = useParams();
 
 	const active = "bg-cyan-sky-12";
 	const nonActive = "hover:bg-cyan-sky-12";
 
 	useEffect(() => {
 		window.scrollTo(0, 0);
-	}, [useParams()]);
+	}, [param]);
 
 	return (
-		<nav className="w-fit fixed top-4 right-4">
-			<ul className="flex gap-4 bg-white w-fit p-4 rounded-full">
+		<nav className="w-fit fixed top-4 right-4 z-20">
+			<ul className="flex gap-4 bg-white w-fit p-4 rounded-full shadow-md">
 				<li>
 					{pathname == "/" ? (
 						<a
@@ -40,22 +41,22 @@ export default function NavBar() {
 					<>
 						<li>
 							<a
-								href="#skill"
-								className={`py-2 px-4 rounded-full ${
-									hash == "#skill" ? active : nonActive
-								}`}
-							>
-								Skill
-							</a>
-						</li>
-						<li>
-							<a
 								href="#about"
 								className={`py-2 px-4 rounded-full ${
 									hash == "#about" ? active : nonActive
 								}`}
 							>
 								About
+							</a>
+						</li>
+						<li>
+							<a
+								href="#skill"
+								className={`py-2 px-4 rounded-full ${
+									hash == "#skill" ? active : nonActive
+								}`}
+							>
+								Skill
 							</a>
 						</li>
 					</>

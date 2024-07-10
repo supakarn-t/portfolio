@@ -2,8 +2,8 @@ import ProjectCard from "../components/ProjectCard";
 
 export default function ProjectPage() {
 	return (
-		<section className="flex flex-col items-center gap-8">
-			<h2 id="project">Project</h2>
+		<section className="flex flex-col items-center gap-8 mt-24">
+			<h2>Project</h2>
 			<section className="grid grid-cols-3 gap-8 justify-items-center w-fit">
 				<ProjectCard
 					projectName="Elviro"
@@ -13,7 +13,7 @@ export default function ProjectPage() {
 
 			<hr className="w-full border-white" />
 
-			<h2 id="project">Mini Project</h2>
+			<h2>Mini Project</h2>
 			<section className="grid grid-cols-3 gap-8 justify-items-center w-fit">
 				<ProjectCard projectName="Simon Game" tag={["React", "JavaScript"]} />
 				<ProjectCard

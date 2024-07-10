@@ -11,10 +11,10 @@ export default function App() {
 			element: (
 				<>
 					<NavBar />
-					<main className="flex flex-col gap-16 py-24 px-4 xl:px-24 min-h-screen">
+					<main className="flex flex-col gap-16 pb-24 px-4 xl:px-24 min-h-screen">
 						<Outlet />
-						<Footer />
 					</main>
+					<Footer />
 				</>
 			),
 			errorElement: <></>,
