@@ -58,7 +58,7 @@ export default function ProjectPage() {
 
 	return (
 		// className="flex flex-col gap-16 pb-24 px-4 xl:px-24 min-h-screen"
-		<section className="flex flex-col items-center gap-16 mt-24">
+		<section className="flex flex-col items-center gap-16 pb-24 px-4 xl:px-24 mt-24">
 			<h2>Project</h2>
 			<section className="flex flex-col sm:grid grid-cols-2 md:grid-cols-3 gap-8 justify-items-center w-3/4">
 				{projectList.map((project, index) => (

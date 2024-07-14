@@ -21,7 +21,7 @@ export default function HeroSection() {
 				</a>
 			</section>
 			<img
-				src="Hand coding-rafiki.svg"
+				src="Code-typing.svg"
 				alt="Coding"
 				className="w-1/2 hidden lg:flex"
 			/>
