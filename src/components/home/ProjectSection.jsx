@@ -22,7 +22,7 @@ export default function ProjectSection() {
 	];
 
 	return (
-		<section id="project" className="flex flex-col items-center gap-8">
+		<section className="flex flex-col items-center gap-8">
 			<h2>Project</h2>
 			<div className="flex flex-col gap-8 justify-items-center w-full">
 				{projectList.map((project, index) => (

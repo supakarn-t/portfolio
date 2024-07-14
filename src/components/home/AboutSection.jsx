@@ -2,7 +2,7 @@ import { FaEnvelope, FaGithub, FaLinkedin } from "react-icons/fa6";
 
 export default function AboutSection() {
 	return (
-		<section id="about" className="flex flex-col items-center gap-8">
+		<section className="flex flex-col items-center gap-8">
 			<h2>About Me</h2>
 			<div className="flex flex-col md:flex-row items-center gap-16">
 				<img src="messy bun-bro.svg" alt="Coding" className="w-2/3 md:w-1/3" />

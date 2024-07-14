@@ -7,11 +7,11 @@ export default function HomePage() {
 	return (
 		<main className="flex flex-col gap-16 pb-24 px-4 sm:px-8 xl:px-24 min-h-screen">
 			<HeroSection />
-			<hr className="w-full border-sky-200" />
+			<hr id="about" className="w-full border-sky-200" />
 			<AboutSection />
-			<hr className="w-full border-sky-200" />
+			<hr id="skill" className="w-full border-sky-200" />
 			<SkillSection />
-			<hr className="w-full border-sky-200" />
+			<hr id="project" className="w-full border-sky-200" />
 			<ProjectSection />
 		</main>
 	);
