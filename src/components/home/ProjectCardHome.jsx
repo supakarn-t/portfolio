@@ -12,16 +12,12 @@ export default function ProjectCardHome({
 	return (
 		<div className="flex gap-4 bg-white rounded-lg overflow-hidden h-60 hover:shadow-lg hover:scale-105">
 			<picture className="hidden md:flex w-1/3 rounded-lg overflow-hidden border hover:shadow-lg m-4">
-				<img
-					src={image}
-					alt={projectName}
-					className="object-cover w-full object-top"
-				/>
+				<img src={image} alt={projectName} className="object-cover w-full" />
 			</picture>
-			<article className="flex flex-col justify-between gap-4 p-4">
+			<article className="flex flex-col justify-between gap-4 p-4 w-2/3">
 				<article className="flex flex-col gap-4">
 					<h3>{projectName}</h3>
-					<p>{description}</p>
+					<p className="text-base">{description}</p>
 					<div className="flex gap-4">
 						<a href={github} target="_blank">
 							<FaGithub />
