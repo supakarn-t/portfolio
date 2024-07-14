@@ -12,7 +12,11 @@ export default function ProjectCardHome({
 	return (
 		<div className="flex gap-4 bg-white rounded-lg overflow-hidden h-60 hover:shadow-lg hover:scale-105">
 			<picture className="hidden md:flex w-1/3 rounded-lg overflow-hidden border hover:shadow-lg m-4">
-				<img src={image} alt={projectName} className="object-cover" />
+				<img
+					src={image}
+					alt={projectName}
+					className="object-cover w-full object-top"
+				/>
 			</picture>
 			<article className="flex flex-col justify-between gap-4 p-4">
 				<article className="flex flex-col gap-4">
