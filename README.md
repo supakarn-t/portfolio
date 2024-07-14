@@ -1,8 +1,11 @@
-# React + Vite
+# Supakarn Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to my portfolio! Here, I showcase my skills and experience across frontend and backend development, along with key projects I've contributed to.
 
-Currently, two official plugins are available:
+## View My Portfolio
+Check out my deployed portfolio [here](https://supakarn-t-portfolio.vercel.app/).
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Contact
+- Email: <a href="mailto:supakarn.tangsiri@gmail.com">supakarn.tangsiri@gmail.com</a>
+- GitHub: <a href="https://github.com/supakarn-t" target="_blank" rel="noopener noreferrer">github.com/supakarn-t</a>
+- LinkedIn: <a href="https://www.linkedin.com/in/supakarn-t" target="_blank" rel="noopener noreferrer">linkedin.com/in/supakarn-t</a>
