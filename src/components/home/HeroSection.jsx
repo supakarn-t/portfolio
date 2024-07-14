@@ -21,7 +21,7 @@ export default function HeroSection() {
 				</a>
 			</section>
 			<img
-				src="Code-typing.svg"
+				src="code-typing.svg"
 				alt="Coding"
 				className="w-1/2 hidden lg:flex"
 			/>

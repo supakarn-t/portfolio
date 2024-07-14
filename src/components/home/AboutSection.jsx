@@ -5,7 +5,7 @@ export default function AboutSection() {
 		<section className="flex flex-col items-center gap-8">
 			<h2>About Me</h2>
 			<div className="flex flex-col md:flex-row items-center gap-16">
-				<img src="Messy-bun.svg" alt="Coding" className="w-2/3 md:w-1/3" />
+				<img src="messy-bun.svg" alt="Coding" className="w-2/3 md:w-1/3" />
 				<div className="md:w-2/3 flex flex-col gap-8">
 					<p>
 						As a software developer with a background in physics, I have a deep
