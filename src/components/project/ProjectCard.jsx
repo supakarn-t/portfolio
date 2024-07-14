@@ -4,7 +4,7 @@ import { FaGithub, FaUpRightFromSquare } from "react-icons/fa6";
 export default function ProjectCard({ projectName, link, github, tag, image }) {
 	return (
 		<div className="bg-white rounded-lg overflow-hidden hover:shadow-lg hover:scale-105">
-			<picture className="hidden md:flex">
+			<picture>
 				<img
 					src={image}
 					alt={projectName}

@@ -11,18 +11,15 @@
 		@apply transition duration-200;
 	}
 
-	h1 {
-		@apply text-6xl font-bold;
-	}
 	h2 {
 		@apply text-4xl font-bold;
 	}
 	h3 {
 		@apply text-2xl font-semibold;
 	}
-	body {
+	/* body {
 		@apply text-lg bg-gradient-to-br from-cyan-50 to-sky-200 min-h-screen;
-	}
+	} */
 
 	.bg-cyan-sky-01 {
 		@apply bg-gradient-to-br from-cyan-100 to-sky-100;
@@ -40,6 +37,13 @@
 	}
 	.btn-translate {
 		@apply rounded-xl shadow-[7px_7px_0_0_gray] hover:translate-x-1 hover:translate-y-1 hover:shadow-[3px_3px_0_0_gray];
+	}
+}
+
+@layer utilities {
+	.font-outline {
+		-webkit-text-stroke: 1.5px black;
+		color: transparent;
 	}
 }
 

@@ -15,12 +15,12 @@ export default function NavBar() {
 
 	return (
 		<nav className="w-fit fixed top-4 right-4 z-20">
-			<ul className="flex gap-4 bg-white w-fit p-4 rounded-full shadow-md">
-				<li>
+			<ul className="flex flex-col sm:flex-row gap-4 bg-white w-fit p-4 rounded-3xl sm:rounded-full shadow-md">
+				<li className="w-full sm:w-fit">
 					{pathname == "/" ? (
 						<a
 							href="#"
-							className={`py-2 px-4 rounded-full ${
+							className={`w-full sm:w-fit py-2 px-4 rounded-full ${
 								hash == "" ? active : nonActive
 							}`}
 						>
@@ -29,7 +29,7 @@ export default function NavBar() {
 					) : (
 						<Link
 							to="/"
-							className={`py-2 px-4 rounded-full ${
+							className={`w-full sm:w-fit py-2 px-4 rounded-full ${
 								pathname == "/" ? active : nonActive
 							}`}
 						>
@@ -39,20 +39,20 @@ export default function NavBar() {
 				</li>
 				{pathname == "/" ? (
 					<>
-						<li>
+						<li className="w-full sm:w-fit">
 							<a
 								href="#about"
-								className={`py-2 px-4 rounded-full ${
+								className={`w-full sm:w-fit py-2 px-4 rounded-full ${
 									hash == "#about" ? active : nonActive
 								}`}
 							>
 								About
 							</a>
 						</li>
-						<li>
+						<li className="w-full sm:w-fit">
 							<a
 								href="#skill"
-								className={`py-2 px-4 rounded-full ${
+								className={`w-full sm:w-fit py-2 px-4 rounded-full ${
 									hash == "#skill" ? active : nonActive
 								}`}
 							>
@@ -61,10 +61,10 @@ export default function NavBar() {
 						</li>
 					</>
 				) : null}
-				<li>
+				<li className="w-full sm:w-fit">
 					<a
 						href="#project"
-						className={`py-2 px-4 rounded-full ${
+						className={`w-full sm:w-fit py-2 px-4 rounded-full ${
 							pathname == "/project" || hash == "#project" ? active : nonActive
 						}`}
 					>

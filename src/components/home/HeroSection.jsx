@@ -3,15 +3,22 @@ import { RxDownload } from "react-icons/rx";
 export default function HeroSection() {
 	return (
 		<section className="flex h-screen">
-			<section className="flex flex-col gap-8 my-auto justify-center lg:w-1/2">
-				<p className="text-xl font-semibold">Welcome to my portfolio</p>
-				<h1 className="leading-tight text-2xl sm:text-4xl md:text-6xl">
-					Hi I&apos;m Supakarn <br /> Tangsirivatthanavong, <br /> a Software
-					Engineer
+			<section className="flex flex-col gap-6 my-auto justify-center lg:w-1/2">
+				<h1 className="text-3xl">
+					Hi, I am{" "}
+					<span className="font-bold">Supakarn Tangsirivatthanavong</span>
 				</h1>
-				<button className="btn bg-white btn-translate flex items-center gap-2 py-3 w-fit">
+				<h1 className="text-6xl md:text-8xl font-bold font-outline">
+					Fullstack <br />
+					Developer
+				</h1>
+				<a
+					href="https://drive.google.com/file/d/1lWdvbuf8P_3sHlhcYz_O7sT4YGho__R-/view?usp=sharing"
+					target="_blank"
+					className="btn bg-white btn-translate flex items-center gap-2 py-3 w-fit mt-4"
+				>
 					<RxDownload /> Download My CV
-				</button>
+				</a>
 			</section>
 			<img
 				src="Hand coding-rafiki.svg"
