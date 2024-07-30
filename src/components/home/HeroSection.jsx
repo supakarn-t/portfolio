@@ -13,7 +13,7 @@ export default function HeroSection() {
 					Developer
 				</h1>
 				<a
-					href="https://drive.google.com/file/d/1lWdvbuf8P_3sHlhcYz_O7sT4YGho__R-/view?usp=sharing"
+					href="https://drive.google.com/file/d/1P9H8zAjWVBk0tnEnMQFx-8YNXGPtdDAI/view?usp=sharing"
 					target="_blank"
 					className="btn bg-white btn-translate flex items-center gap-2 py-3 w-fit mt-4"
 				>
