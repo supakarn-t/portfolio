@@ -1,42 +1,42 @@
 import PropTypes from "prop-types";
-import { FaGithub, FaUpRightFromSquare } from "react-icons/fa6";
+// import { FaGithub, FaUpRightFromSquare } from "react-icons/fa6";
+import Tag from "./Tag";
 
-export default function ProjectCard({ projectName, link, github, tag, image }) {
+// export default function ProjectCard({ projectName, link, github, tag, image }) {
+export default function ProjectCard({ projectName, tag, image }) {
 	return (
-		<div className="bg-white rounded-lg overflow-hidden hover:shadow-lg hover:scale-105">
-			<picture>
-				<img
-					src={image}
-					alt={projectName}
-					className="object-cover aspect-square"
-				/>
-			</picture>
-			<article className="flex flex-col justify-between gap-8 p-4">
-				<article className="flex flex-col gap-4">
-					<h3>{projectName}</h3>
-					<div className="flex gap-4">
+		<a
+			href="#"
+			className="relative group block h-auto rounded-lg overflow-hidden shadow-lg"
+		>
+			<img
+				src={image}
+				alt={projectName}
+				className="h-full w-full object-cover opacity-100 transition-opacity "
+			/>
+
+			<div className="absolute inset-0 flex items-end h-full p-4 sm:p-6 lg:p-8 bg-gradient-to-b from-transparent via-black/45 to-black/70 opacity-0 group-hover:opacity-100">
+				<div className="flex flex-col gap-4 translate-y-8 transform opacity-0 transition-all group-hover:translate-y-0 group-hover:opacity-100">
+					<h3 className="text-white">{projectName}</h3>
+					<p className="text-sm text-white">
+						Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis
+						perferendis hic asperiores quibusdam quidem voluptates doloremque
+						reiciendis nostrum harum. Repudiandae?
+					</p>
+					{/* <div className="flex gap-4">
 						<a href={github} target="_blank">
-							<FaGithub />
+							<FaGithub className="text-blue-500" />
 						</a>
 						{link ? (
 							<a href={link} target="_blank">
 								<FaUpRightFromSquare />
 							</a>
 						) : null}
-					</div>
-				</article>
-				<div className="flex flex-wrap gap-3 text-sm">
-					{tag.map((tag, i) => (
-						<div
-							key={i}
-							className="px-4 rounded-full bg-sky-200 hover:shadow-md"
-						>
-							{tag}
-						</div>
-					))}
+					</div> */}
+					<Tag tag={tag} />
 				</div>
-			</article>
-		</div>
+			</div>
+		</a>
 	);
 }
 
