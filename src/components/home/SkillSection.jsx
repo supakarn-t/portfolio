@@ -1,10 +1,13 @@
+import { BiLogoTypescript } from "react-icons/bi";
 import { DiSqllite } from "react-icons/di";
 import {
 	FaCss3Alt,
 	FaFigma,
 	FaGitAlt,
+	FaGolang,
 	FaHtml5,
 	FaNodeJs,
+	FaPython,
 	FaReact,
 	FaSquareJs,
 } from "react-icons/fa6";
@@ -13,28 +16,20 @@ import { SiExpress, SiMongodb, SiTailwindcss } from "react-icons/si";
 export default function SkillSection() {
 	const skillList = [
 		{
-			icon: <FaHtml5 className="text-7xl" />,
-			iconName: "HTML",
-		},
-		{
-			icon: <FaCss3Alt className="text-7xl" />,
-			iconName: "CSS",
-		},
-		{
-			icon: <SiTailwindcss className="text-7xl" />,
-			iconName: "Tailwind CSS",
-		},
-		{
 			icon: <FaSquareJs className="text-7xl" />,
 			iconName: "JavaScript",
 		},
 		{
-			icon: <FaReact className="text-7xl" />,
-			iconName: "React",
+			icon: <BiLogoTypescript className="text-[80px]" />,
+			iconName: "TypeScript",
 		},
 		{
-			icon: <FaFigma className="text-7xl" />,
-			iconName: "Figma",
+			icon: <FaGolang className="text-7xl" />,
+			iconName: "Golang",
+		},
+		{
+			icon: <FaPython className="text-7xl" />,
+			iconName: "Python",
 		},
 		{
 			icon: <FaNodeJs className="text-7xl" />,
@@ -53,8 +48,28 @@ export default function SkillSection() {
 			iconName: "SQLite",
 		},
 		{
+			icon: <FaReact className="text-7xl" />,
+			iconName: "React",
+		},
+		{
+			icon: <FaHtml5 className="text-7xl" />,
+			iconName: "HTML",
+		},
+		{
+			icon: <FaCss3Alt className="text-7xl" />,
+			iconName: "CSS",
+		},
+		{
+			icon: <SiTailwindcss className="text-7xl" />,
+			iconName: "Tailwind CSS",
+		},
+		{
 			icon: <FaGitAlt className="text-7xl" />,
 			iconName: "Git",
+		},
+		{
+			icon: <FaFigma className="text-7xl" />,
+			iconName: "Figma",
 		},
 	];
 
