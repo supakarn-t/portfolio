@@ -2,7 +2,7 @@ import { FaEnvelope, FaGithub, FaLinkedin } from "react-icons/fa6";
 
 export default function AboutSection() {
 	return (
-		<section className="flex flex-col items-center gap-8">
+		<section id="about" className="flex flex-col items-center gap-8">
 			<h2>About Me</h2>
 			<div className="flex flex-col md:flex-row items-center gap-16">
 				<img src="messy-bun.svg" alt="Coding" className="w-2/3 md:w-1/3" />
@@ -23,21 +23,21 @@ export default function AboutSection() {
 						<a
 							href="https://github.com/supakarn-t"
 							target="_blank"
-							className="p-4 rounded-full hover:bg-white/60"
+							className="p-4 rounded-full hover:bg-white"
 						>
 							<FaGithub className="text-4xl" />
 						</a>
 						<a
 							href="https://www.linkedin.com/in/supakarn-t/"
 							target="_blank"
-							className="p-4 rounded-full hover:bg-white/60"
+							className="p-4 rounded-full hover:bg-white"
 						>
 							<FaLinkedin className="text-4xl" />
 						</a>
 						<a
 							href="mailto:supakarn.tangsiri@gmail.com"
 							target="_blank"
-							className="p-4 rounded-full hover:bg-white/60"
+							className="p-4 rounded-full hover:bg-white"
 						>
 							<FaEnvelope className="text-4xl" />
 						</a>

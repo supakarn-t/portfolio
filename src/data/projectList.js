@@ -5,6 +5,8 @@ const projectList = [
 		link: "https://elviro-frontend.vercel.app/",
 		tag: ["React", "JavaScript"],
 		image: "elviro.jpeg",
+		description:
+			"E-commerce web application using the MERN stack (MongoDB, Express.js, React, Node.js) for the development. Collaborated with a team of 4 developers, holding regular scrum meetings and using version control with Git to ensure smooth integration of code.",
 	},
 	{
 		projectName: "Elviro Furniture Shop (Backend)",
@@ -12,6 +14,8 @@ const projectList = [
 		link: "",
 		tag: ["JavaScript", "Node.js", "Express", "MongoDB"],
 		image: "elviro.jpeg",
+		description:
+			"E-commerce web application using the MERN stack (MongoDB, Express.js, React, Node.js) for the development. Collaborated with a team of 4 developers, holding regular scrum meetings and using version control with Git to ensure smooth integration of code.",
 	},
 	{
 		projectName: "Classify Galaxy by Support Vector Machine",
@@ -19,6 +23,8 @@ const projectList = [
 		link: "",
 		tag: ["Python", "Machine Learning", "SVM"],
 		image: "galaxy.jpg",
+		description:
+			"Mahidol University Astrophysics Laboratory Internship & Final Project.",
 	},
 	{
 		projectName: "Simon Game",
@@ -26,6 +32,7 @@ const projectList = [
 		link: "https://supakarn-t-simon-game.vercel.app/",
 		tag: ["React", "TailwindCSS", "JavaScript"],
 		image: "simon-game.png",
+		description: "",
 	},
 	{
 		projectName: "React Assessment",
@@ -33,6 +40,7 @@ const projectList = [
 		link: "https://31-vicky-react.vercel.app/",
 		tag: ["React", "TailwindCSS", "JavaScript"],
 		image: "react-assessment.png",
+		description: "",
 	},
 	{
 		projectName: "Pokemon API",
@@ -40,6 +48,7 @@ const projectList = [
 		link: "https://supakarn-t-react-pokemon-api.vercel.app/",
 		tag: ["React", "TailwindCSS", "JavaScript"],
 		image: "pokemon-api.png",
+		description: "",
 	},
 	{
 		projectName: "JavaScript E-commerce Assessment",
@@ -47,6 +56,7 @@ const projectList = [
 		link: "https://31-vicky-js.vercel.app/",
 		tag: ["HTML", "TailwindCSS", "JavaScript"],
 		image: "js-assessment.png",
+		description: "",
 	},
 	{
 		projectName: "Colmar",
@@ -54,6 +64,7 @@ const projectList = [
 		link: "https://colmar-with-tailwind.vercel.app/",
 		tag: ["HTML", "TailwindCSS"],
 		image: "colmar.png",
+		description: "",
 	},
 ];
 
