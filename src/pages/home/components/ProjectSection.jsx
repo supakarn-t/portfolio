@@ -9,7 +9,7 @@ export default function ProjectSection() {
 				"E-commerce web application using the MERN stack (MongoDB, Express.js, React, Node.js) for the development. Collaborated with a team of 4 developers, holding regular scrum meetings and using version control with Git to ensure smooth integration of code.",
 			github: "https://github.com/supakarn-t/elviro-frontend",
 			link: "https://elviro-frontend.vercel.app/",
-			tag: ["React", "JavaScrip", "TailwindCSS"],
+			tag: ["JavaScript", "React", "TailwindCSS"],
 			image: "elviro.png",
 		},
 		{
