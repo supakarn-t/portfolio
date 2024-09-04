@@ -3,7 +3,6 @@ import { Link, useParams } from "react-router-dom";
 
 export default function NavBar() {
 	const { pathname } = location;
-	const { hash } = location;
 	const param = useParams();
 
 	const active = "bg-cyan-sky-12";
@@ -19,10 +18,9 @@ export default function NavBar() {
 				<li className="w-full sm:w-fit">
 					{pathname == "/" ? (
 						<a
-							href="#"
-							className={`w-full sm:w-fit py-2 px-4 rounded-full ${
-								hash == "" ? active : nonActive
-							}`}
+							href="#hero"
+							data-to-scrollspy-id="hero"
+							className="w-full sm:w-fit py-2 px-4 rounded-full"
 						>
 							Home
 						</a>
@@ -42,9 +40,8 @@ export default function NavBar() {
 						<li className="w-full sm:w-fit">
 							<a
 								href="#about"
-								className={`w-full sm:w-fit py-2 px-4 rounded-full ${
-									hash == "#about" ? active : nonActive
-								}`}
+								data-to-scrollspy-id="about"
+								className="w-full sm:w-fit py-2 px-4 rounded-full"
 							>
 								About
 							</a>
@@ -52,9 +49,8 @@ export default function NavBar() {
 						<li className="w-full sm:w-fit">
 							<a
 								href="#skill"
-								className={`w-full sm:w-fit py-2 px-4 rounded-full ${
-									hash == "#skill" ? active : nonActive
-								}`}
+								data-to-scrollspy-id="skill"
+								className="w-full sm:w-fit py-2 px-4 rounded-full"
 							>
 								Skill
 							</a>
@@ -64,8 +60,9 @@ export default function NavBar() {
 				<li className="w-full sm:w-fit">
 					<a
 						href="#project"
+						data-to-scrollspy-id="project"
 						className={`w-full sm:w-fit py-2 px-4 rounded-full ${
-							pathname == "/project" || hash == "#project" ? active : nonActive
+							pathname == "/project" ? active : nonActive
 						}`}
 					>
 						Project

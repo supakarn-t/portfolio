@@ -2,7 +2,7 @@ import { RxDownload } from "react-icons/rx";
 
 export default function HeroSection() {
 	return (
-		<section className="flex h-screen">
+		<section id="hero" className="flex h-screen">
 			<section className="flex flex-col gap-6 my-auto justify-center lg:w-1/2">
 				<h1 className="text-3xl">
 					Hi, I am{" "}

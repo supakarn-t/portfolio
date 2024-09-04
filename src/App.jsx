@@ -1,7 +1,7 @@
 import { createBrowserRouter, Outlet, RouterProvider } from "react-router-dom";
-import NavBar from "./components/layout/NavBar";
-import HomePage from "./pages/HomePage";
-import ProjectPage from "./pages/ProjectPage";
+import NavBar from "./components/NavBar";
+import HomePage from "./pages/home/HomePage";
+import ProjectPage from "./pages/project/ProjectPage";
 // import Footer from "./components/Footer";
 
 export default function App() {
