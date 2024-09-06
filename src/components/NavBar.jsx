@@ -20,7 +20,7 @@ export default function NavBar() {
 						<a
 							href="#hero"
 							data-to-scrollspy-id="hero"
-							className="w-full sm:w-fit py-2 px-4 rounded-full"
+							className="w-full sm:w-fit py-2 px-4 rounded-full hover:bg-cyan-sky-12"
 						>
 							Home
 						</a>
@@ -41,7 +41,7 @@ export default function NavBar() {
 							<a
 								href="#about"
 								data-to-scrollspy-id="about"
-								className="w-full sm:w-fit py-2 px-4 rounded-full"
+								className="w-full sm:w-fit py-2 px-4 rounded-full hover:bg-cyan-sky-12"
 							>
 								About
 							</a>
@@ -50,7 +50,7 @@ export default function NavBar() {
 							<a
 								href="#skill"
 								data-to-scrollspy-id="skill"
-								className="w-full sm:w-fit py-2 px-4 rounded-full"
+								className="w-full sm:w-fit py-2 px-4 rounded-full hover:bg-cyan-sky-12"
 							>
 								Skill
 							</a>
@@ -61,7 +61,7 @@ export default function NavBar() {
 					<a
 						href="#project"
 						data-to-scrollspy-id="project"
-						className={`w-full sm:w-fit py-2 px-4 rounded-full ${
+						className={`w-full sm:w-fit py-2 px-4 rounded-full hover:bg-cyan-sky-12 ${
 							pathname == "/project" ? active : nonActive
 						}`}
 					>
