@@ -11,6 +11,7 @@ import {
 	FaReact,
 	FaSquareJs,
 } from "react-icons/fa6";
+import { RiNextjsFill } from "react-icons/ri";
 import { SiExpress, SiMongodb, SiTailwindcss } from "react-icons/si";
 
 const skillList = [
@@ -49,6 +50,10 @@ const skillList = [
 	{
 		icon: <FaReact className="text-7xl" />,
 		iconName: "React",
+	},
+	{
+		icon: <RiNextjsFill className="text-7xl" />,
+		iconName: "Next.js",
 	},
 	{
 		icon: <FaHtml5 className="text-7xl" />,
