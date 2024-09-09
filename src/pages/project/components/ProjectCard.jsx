@@ -12,11 +12,17 @@ export default function ProjectCard({
 }) {
 	return (
 		<div className="relative group block h-auto rounded-lg overflow-hidden shadow-lg">
-			<img
-				src={image}
-				alt={projectName}
-				className="h-full w-full object-cover opacity-100 transition-opacity "
-			/>
+			{image ? (
+				<img
+					src={image}
+					alt={projectName}
+					className="h-full w-full object-cover opacity-100 transition-opacity "
+				/>
+			) : (
+				<div className="bg-neutral-200 aspect-video flex items-center justify-center">
+					<h3>No Image</h3>
+				</div>
+			)}
 
 			<div className="absolute inset-0 flex items-end h-full p-4 sm:p-6 lg:p-8 bg-gradient-to-b from-transparent via-black/45 to-black/70 opacity-0 group-hover:opacity-100">
 				<article className="flex flex-col gap-4 translate-y-8 transform opacity-0 transition-all group-hover:translate-y-0 group-hover:opacity-100">

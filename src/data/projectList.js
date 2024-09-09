@@ -18,6 +18,21 @@ const projectList = [
 			"E-commerce web application using the MERN stack (MongoDB, Express.js, React, Node.js) for the development. Collaborated with a team of 4 developers, holding regular scrum meetings and using version control with Git to ensure smooth integration of code.",
 	},
 	{
+		projectName: "Quiz Game",
+		github: "https://github.com/QV2M-Tech/Quiz-Game",
+		link: "",
+		tag: [
+			"TypeScript",
+			"JavaScript",
+			"Next.js",
+			"Node.js",
+			"Express",
+			"MongoDB",
+		],
+		image: "",
+		description: "",
+	},
+	{
 		projectName: "Classify Galaxy by Support Vector Machine",
 		github: "https://github.com/supakarn-t/Classify-Galaxy-by-SVM",
 		link: "",
