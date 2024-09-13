@@ -20,7 +20,7 @@ const projectList = [
 	{
 		projectName: "Quiz Game",
 		github: "https://github.com/QV2M-Tech/Quiz-Game",
-		link: "",
+		link: "https://silicon-warin-quiz-game.vercel.app/",
 		tag: [
 			"TypeScript",
 			"JavaScript",
@@ -29,7 +29,7 @@ const projectList = [
 			"Express",
 			"MongoDB",
 		],
-		image: "",
+		image: "quiz-game.jpeg",
 		description: "",
 	},
 	{
